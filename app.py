@@ -15,5 +15,5 @@ st.write(type(model))
 
 solver = "glpk"
 optimizer = opt.SolverFactory(solver)
-solver_info = optimizer.solve(pyM, tee=True)
+solver_info = optimizer.solve(model, tee=True)
 st.write(type(solver_info))
