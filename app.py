@@ -12,7 +12,6 @@ model.Constraint1 = pyo.Constraint(expr = 3*model.x[1] + 4*model.x[2] >= 1)
 
 st.write(type(model))
 
-
 solver = "glpk"
 optimizer = opt.SolverFactory(solver)
 
